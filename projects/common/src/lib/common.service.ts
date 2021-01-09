@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { Company } from "./base.types";
 
 @Injectable({
   providedIn: "root"
@@ -6,5 +7,14 @@ import { Injectable } from "@angular/core";
 export class CommonService {
 
   constructor() {
+  }
+
+  getCompanies(): Company[] {
+    return [{
+      name: "First Co"
+    }, {
+      name: "Second Co"
+    }];
+
   }
 }
