@@ -11,9 +11,11 @@ export class CommonService {
 
   getCompanies(): Company[] {
     return [{
-      name: "First Co"
+      name: "First Co",
+      employees: 10
     }, {
-      name: "Second Co"
+      name: "Second Co",
+      employees: 20
     }];
 
   }
