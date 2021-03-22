@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Company } from "common";
 
 @Component({
   selector: "app-root",
@@ -7,4 +8,9 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "my-second-app";
+  company: Company = {
+    name: "Rob's Co",
+    employees: 20
+  };
+
 }
